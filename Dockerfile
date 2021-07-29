@@ -7,4 +7,4 @@ COPY . .
 RUN mvn package
 FROM tomcat
 COPY --from=junk /JavaWeb/target/*.war /usr/local/tomcat/webapps
-EXPOSE PORT
+EXPOSE 8080
